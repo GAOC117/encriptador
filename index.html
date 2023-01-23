@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador X01</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gruppo&family=Libre+Barcode+39+Extended+Text&family=Prosto+One&family=Russo+One&family=Sirin+Stencil&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalized.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header contenedor-principal">
+        <div class="header__logo">
+            <img src="img/X01.png" alt="imagen logo">
+        </div>
+        <h1 class="header__texto">Encriptador</h1>
+
+    </header>
+
+
+    <main class="main contenedor">
+        <div class="main__campo">
+
+            <div class="textarea__contenedor">
+                <textarea id="decifrar" class="main__textarea" id="mensaje" cols="30" rows="10"
+                    placeholder="Ingrese el texto"></textarea>
+
+                <button id="btnLimpiar" onclick="limpiar()" class="boton limpiar" value="limpiar">Limpiar</button>
+            </div>
+            <div class="informacion__contenedor">
+                <div class="informacion">
+                    <p class="informacion__parrafo">Solo letras minúsculas y sin acentos <span>(no te preocupes,
+                            cualquier cosa lo corregimos por ti)</span></p>
+                    <div class="main__botones">
+                        <button id="btnEncriptar" onclick="encriptar()" class="boton encriptar"
+                            value="encriptar">Encriptar</button>
+                        <button id="btnDesencriptar" onclick="desencriptar()" class="boton desencriptar"
+                            value="desencriptar">Desencriptar</button>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main__imagen">
+            <div id="img" class="imagen">
+                <img src="img/cortana-halo.gif" alt="">
+            </div>
+            <div class="main__texto">
+                <p id="mensaje" class="mensaje-cifrado">MENSAJE</p>
+                <p id="mensaje-aviso" class="texto__mensaje">Ningún mensaje fue encontrado</p>
+                <p id="mensaje-instruccion" class="texto__indicacion">Ingrese el texto que desees encriptar o
+                    desencriptar</p>
+            </div>
+            <button id="btnCopiar" onclick="copiar()" class="boton copiar" value="copiar">Copiar</button>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <p class="autor">Elaborado por Guillermo Antonio Ortiz de los Corella - X01 Studios - 2023</p>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
